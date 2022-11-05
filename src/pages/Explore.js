@@ -1,15 +1,18 @@
-import React from 'react'
+import React, {useState, Component} from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import './Explore.css';
+import { Icon } from "leaflet";
 
-function explore() {
-    return (
-        <body>
-            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-                integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossOrigin=""/>
-            <link rel="stylesheet" href="Explore.css"></link>
-            <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-                integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
-                    crossOrigin=""></script>
-            <div id="map"></div>
-        </body>
-    )
+class Explore extends Component {
+    render() {
+        return(
+            <MapContainer center={[45.4, -75.7]} zoom={13} scrollWheelZoom={false}>
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                           attribution='&copy; < href="https://osm.org/copyright">OpenStreetMap</a> contributors' />
+            </MapContainer>
+        )
+    }
 }
+
+export default Explore
