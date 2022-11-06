@@ -46,7 +46,7 @@ body {
 .midText h2 {
     text-align: left;
     font-size: 46px;
-    font-weight: extra-bold;
+    /*font-weight: 800; !* extra-bold numerical value *!*/
 }
 
 .midText p {
@@ -106,4 +106,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(126, 126, 126, 0.2);
+}
+
+.bottomDiv {
+    width: 100%;
 }

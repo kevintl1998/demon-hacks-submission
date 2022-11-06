@@ -3,6 +3,7 @@ import './Home.css'
 import Logo from '../assets/Logo.png'
 import acc_img from '../assets/account.png'
 import house from '../assets/image.png';
+import MapAndReviewContainer from '../containers/MapAndReviewContainer'
 
 function Home(){
     return(
@@ -14,16 +15,16 @@ function Home(){
                 </div>
 
                 <div className="rowFlexMid">
-                    <a href="./about">About</a>
+                    <a href="/about">About</a>
                     <a href="">Find Houses</a>
                 </div>
 
                 <div className="rowFlexRight">
-                    <a href="./submit_review"><button>Write a Review</button></a>
+                    <a href="/submit_review"><button>Write a Review</button></a>
                     <img className="account" src={acc_img} alt="account" />
                 </div>
             </div>
-            
+
             <div className="midDiv">
                 <div className="midText">
                     <h2>Make the most of your Halloween</h2>
@@ -32,6 +33,10 @@ function Home(){
                 </div>
                 <img src={house} alt="" />
             </div>
+            <div>
+
+            </div>
+            <MapAndReviewContainer/>
         </div>
     );
 }

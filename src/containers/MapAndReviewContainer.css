@@ -1,0 +1,29 @@
+
+.mapAndReviewContainer {
+    /*padding-left: 2%;*/
+    /*padding-right: 2%;*/
+
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    background-color: #61dafb;
+}
+
+.map {
+    width: 100% !important;
+    /*height: 301px;*/
+    display: flex !important;
+    flex-direction:row !important;
+
+    overflow: visible !important;
+    /*overflow-x: scroll;*/
+    /*overflow-y: scroll;*/
+}
+
+.container {
+    align-items: center;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
