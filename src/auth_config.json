@@ -1,5 +1,5 @@
 {
     "domain": "dev-k7msw0qw2gimxh0c.us.auth0.com",
-    "clientId": "vmbLkjUAbTHHTZxnbHTY8yc4gtftkwKK",
-    "audience": "YOUR_API_IDENTIFIER"
+    "clientId": "QHCglYAdUnmLsQOSuiYlbKhHzZOc7ODs",
+    "audience": "https://dev-k7msw0qw2gimxh0c.us.auth0.com/api/v2/"
   }
