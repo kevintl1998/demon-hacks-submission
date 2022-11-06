@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -10,5 +11,8 @@ code {
 }
 
 button {
+    border-radius: 5px;
+    background-color: #CF0A0A;
     font-family: 'Irish Grover';
+    height: 30px;
 }
