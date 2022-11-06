@@ -11,7 +11,7 @@ function Home(){
         <div>
             <div className='Nav'>
                 <img className='logo' src={logo} alt="logo" />
-                <input type="text" placeholder="Search.."></input>
+                <input type="text" placeholder="Search.."/>
                 <a href="">Claim your house</a>
                 <a href="">Write a review</a>
                 <img className='account-img' src={account} alt="" />
