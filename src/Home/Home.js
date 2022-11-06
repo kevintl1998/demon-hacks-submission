@@ -8,9 +8,9 @@ function Home(){
     return(
         <div className="container">
             <div className="Nav">
-                <div className="rowFlex">
-                    <img className="Logo" src={Logo} alt="Logo" />
-                    <h2 className="Title">GoodCandy</h2>
+                <div className="rowFlexLeft">
+                    <a href="/"><img className="Logo" src={Logo} alt="Logo" /></a>
+                    <a href="/"><h2 className="Title">GoodCandy</h2></a>
                 </div>
 
                 <div className="rowFlexMid">
@@ -18,7 +18,7 @@ function Home(){
                     <a href="">Find Houses</a>
                 </div>
 
-                <div className="rowFlex">
+                <div className="rowFlexRight">
                     <a href="./submit_review"><button>Write a Review</button></a>
                     <img className="account" src={acc_img} alt="account" />
                 </div>
