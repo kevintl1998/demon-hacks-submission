@@ -54,13 +54,22 @@ body {
     font-size: 12px;
 }
 
-.rowFlex {
+.rowFlexLeft {
     width: 33%;
     text-align: center;
     align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: left;
+}
+
+.rowFlexRight {
+    width: 33%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
 }
 
 .rowFlexMid {
