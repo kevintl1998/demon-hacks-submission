@@ -18,6 +18,11 @@
     margin: auto;
 }
 
+.MuiBox-root{
+    margin-top: 60px !important;
+}
+
+
 .form {
     /*border-radius: 17px;*/
     background-color: white;

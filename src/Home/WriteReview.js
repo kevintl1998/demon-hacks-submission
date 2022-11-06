@@ -8,6 +8,23 @@ import TextField from '@mui/material/TextField';
 import {MenuItem} from "@mui/material";
 import styled from '@mui/system/styled';
 import Button from '@mui/material/Button';
+import axios from "axios";
+
+function postReview(fullName, address, zipCode, review, rating) {
+    axios.post('http://localhost:9000/post-reviews', {
+        FullName: fullName,
+        Address: address,
+        ZipCode: zipCode,
+        Review: review,
+        Rating: rating
+    })
+        .then((res) => {
+            console.log(res);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+}
 
 const ratings = [{
         value: '0',
@@ -37,11 +54,16 @@ const ratings = [{
 let curAddress = "";
 let curReview = "";
 let curRating = -1;
+let curFullName = "";
+let curZipCode = "";
 
 let submitForm = function () {
     let address = curAddress;
     let review = curReview;
     let rating = curRating;
+    let fullName = curFullName;
+    let zipCode = curZipCode;
+
     let shouldSubmit = true;
 //    validate addr
     if (address === "") {
@@ -50,6 +72,14 @@ let submitForm = function () {
 
 //    validate review
     if (review === "") {
+        shouldSubmit = false;
+    }
+
+    if (zipCode === "") {
+        shouldSubmit = false;
+    }
+
+    if (fullName === "") {
         shouldSubmit = false;
     }
 //    validate rating
@@ -62,6 +92,9 @@ let submitForm = function () {
     } else {
         window.alert("Failed to submit form. Make sure you filled in every box correctly.")
     }
+
+    postReview(curFullName, curAddress, curZipCode, curReview, curRating);
+    
 }
 
 export function WriteReview() {
@@ -72,18 +105,31 @@ export function WriteReview() {
     }
     const handleReviewChange = (event) => {
         curReview = event.target.value;
-        console.log(curAddress)
+        console.log(curReview)
     }
     const handleRatingChange = (event) => {
         curRating = event.target.value;
         setRating(event.target.value);
     };
+
+    const handleFullNameChange = (event) => {
+        curFullName = event.target.value;
+        console.log(curFullName)
+    }
+
+    const handleZipCodeChange = (event) => {
+        curZipCode = event.target.value;
+        console.log(curZipCode)
+    }
+
+
     const textFieldStyle = {
         // backgroundColor: 'white',
         borderColor: 'white',
         width: "100%",
         height: "100%",
         display: "flex",
+        borderRadius: "8px",
         // alignSelf: "center"
 
     }
@@ -114,8 +160,14 @@ export function WriteReview() {
             <div className="formBorder">
                 <Box component="form" noValidate>
                     <div className="formContainer">
+                    <div className="form">
+                            <StyledField id="address-field" label="Full Name" style={{ color: "white" }} bottom="10%" onChange={handleFullNameChange} />
+                        </div>
                         <div className="form">
                             <StyledField id="address-field" label="Address" style={{ color: "white" }} bottom="10%" onChange={handleAddrChange} />
+                        </div>
+                        <div className="form">
+                            <StyledField id="address-field" label="Zip Code" style={{ color: "white" }} bottom="10%" onChange={handleZipCodeChange} />
                         </div>
                         <div className="form">
                             <StyledField id="review-field" label="Review" onChange={handleReviewChange} />

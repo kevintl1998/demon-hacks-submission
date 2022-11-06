@@ -24,7 +24,7 @@ const Cards = (props) => {
                     <img src={hotel} alt="" />
                 </div>
                     <h2>Address: {review.Address}, {review.ZipCode}</h2>
-                    <p>Rating: {review.Rating}</p>
+                    <p>Rating: {review.Rating}/5</p>
                     <p>Review: {review.Review}</p>
                     <p>-{review.FullName}</p>
                 </div>
