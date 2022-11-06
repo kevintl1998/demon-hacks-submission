@@ -7,6 +7,7 @@ import Map from "./GoogleMap";
 import Cards from "./Cards";
 import { useAuth0 } from "@auth0/auth0-react";
 import { NavLink as RouterNavLink } from "react-router-dom";
+import MapAndReviewContainer from "../containers/MapAndReviewContainer";
 
 const Home = () => {
     const {
@@ -50,7 +51,7 @@ const Home = () => {
             </div>
             <div className="secondPart" id="explore">
                 <div className="map">
-                   <Map/>
+                   <MapAndReviewContainer/>
                 </div>
                 <div className="cards">
                     <Cards name="Hotel Transylvania" rating={5} review="Had a great assortment of candy, everyone was super friendly and looked real."/>
