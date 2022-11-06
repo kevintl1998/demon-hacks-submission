@@ -11,6 +11,7 @@ code {
 }
 
 button {
+    color: white;
     border-radius: 5px;
     background-color: #CF0A0A;
     font-family: 'Irish Grover';
