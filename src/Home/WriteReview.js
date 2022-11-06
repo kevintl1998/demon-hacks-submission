@@ -26,7 +26,8 @@ function postReview(fullName, address, zipCode, review, rating) {
         })
 }
 
-const ratings = [{
+const ratings = [
+    {
         value: '0',
         label: '(0)'
     },
@@ -143,8 +144,8 @@ export function WriteReview() {
         <div>
             <div className="Nav">
                 <div className="rowFlexLeft">
-                    <img className="Logo" src={Logo} alt="Logo"/>
-                    <h2 className="Title">GoodCandy</h2>
+                    <a href="/"><img className="Logo" src={Logo} alt="Logo"/></a>
+                    <a href="/"><h2 className="Title">GoodCandy</h2></a>
                 </div>
                 <div className="rowFlexMid">
                     <a href="/about">About</a>
@@ -152,7 +153,7 @@ export function WriteReview() {
                 </div>
 
                 <div className="rowFlexRight">
-                    <a href=""><button>Write a Review</button></a>
+                    <a href=""><button onClick={void(0)}>Write a Review</button></a>
                     <img className="account" src={acc_img} alt="account" />
                 </div>
             </div>

@@ -29,7 +29,7 @@ const Home = () => {
 
                 <div className="rowFlexMid">
                     <a href="/about">About</a>
-                    <a href="">Find Houses</a>
+                    <a href="#explore">Find Houses</a>
                 </div>
 
 
@@ -48,15 +48,15 @@ const Home = () => {
                 </div>
                 <img src={house} alt="" />
             </div>
-            <div className="secondPart">
+            <div className="secondPart" id="explore">
                 <div className="map">
                    <Map/>
                 </div>
                 <div className="cards">
-                    <Cards name="Hotel Transylvania" rating={5} review="Had a great assortment of candy, everyone was super friendly and looked real"/>
-                    <Cards name="Hotel Transylvania" rating={5} review="Had a great assortment of candy, everyone was super friendly and looked real"/>
-                    <Cards name="Hotel Transylvania" rating={5} review="Had a great assortment of candy, everyone was super friendly and looked real"/>
-                    <Cards name="Hotel Transylvania" rating={5} review="Had a great assortment of candy, everyone was super friendly and looked real"/>
+                    <Cards name="Hotel Transylvania" rating={5} review="Had a great assortment of candy, everyone was super friendly and looked real."/>
+                    <Cards name="Hotel Transylvania" rating={4} review="Was scared every second I was there. This place is truly terrifying!!"/>
+                    <Cards name="Hotel Transylvania" rating={5} review="Ghosts!!! 👻"/>
+                    <Cards name="Hotel Transylvania" rating={0} review="The staff here are extremely rude and one of the bell boys bit my hand off. 😡"/>
                 </div>
             </div>
         </div>
