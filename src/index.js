@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
@@ -6,13 +5,7 @@ import App from "./App";
 import { Auth0Provider } from "@auth0/auth0-react";
 import createBrowserHistory from "./utils/history";
 import { getConfig } from "./config";
-=======
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
->>>>>>> e7253b9043dbea5495abbfe7595a131b2e64c637
+
 
 const onRedirectCallback = (appState) => {
   createBrowserHistory.push(
@@ -30,12 +23,6 @@ const providerConfig = {
   onRedirectCallback,
 };
 
-// ReactDOM.render(
-//   <Auth0Provider {...providerConfig}>
-//     <App />
-//   </Auth0Provider>,
-//   document.getElementById("root")
-// );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
