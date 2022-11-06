@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
 import Home from "./Home/Home";
 import About from './Home/About';
-import WriteReview from './Home/WriteReview';
+import {WriteReview} from './Home/WriteReview';
 
 function App() {
   return (
