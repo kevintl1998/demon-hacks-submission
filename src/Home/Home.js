@@ -3,11 +3,8 @@ import './Home.css'
 import Logo from '../assets/Logo.png'
 import acc_img from '../assets/account.png'
 import house from '../assets/image.png';
-import Map from "./GoogleMap";
 import Cards from "./Cards";
 import { useAuth0 } from "@auth0/auth0-react";
-import {MapContainer, TileLayer} from 'react-leaflet'
-import { NavLink as RouterNavLink } from "react-router-dom";
 import MapAndReviewContainer from "../containers/MapAndReviewContainer";
 
 const Home = () => {
@@ -31,7 +28,7 @@ const Home = () => {
 
                 <div className="rowFlexMid">
                     <a href="/about">About</a>
-                    <a href="#explore">Find Houses</a>
+                    <a href="/explore">Find Houses</a>
                 </div>
 
                 <div className="rowFlexRight">
