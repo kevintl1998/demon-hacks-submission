@@ -30,6 +30,7 @@ body {
     flex-direction: row;
     margin-top: 5%;
     width: 80%;
+    margin-bottom: 5%;
 }
 
 .midDiv img {
@@ -93,6 +94,19 @@ body {
     padding-right: 5%;
 }
 
+.secondPart {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.map {
+    width: 40%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 25%;
+}
+
 .account {
     height: 50px;
     width: 40px;
@@ -110,4 +124,12 @@ body {
 
 .bottomDiv {
     width: 100%;
+}
+
+.cards {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

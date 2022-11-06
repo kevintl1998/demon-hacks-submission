@@ -1,0 +1,31 @@
+.card {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 31px;
+    width: 376px;
+    height: 414px;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.card .container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    width: 80%;
+}
+
+.card h2 {
+    font-family: 'Irish Grover';
+    color: white;
+}
+
+.card p {
+    font-family: 'Irish Grover';
+    color: white;
+}
+
+.card img {
+    width: 300px;
+    border-radius: 20px;
+}

@@ -3,7 +3,8 @@ import './Home.css'
 import Logo from '../assets/Logo.png'
 import acc_img from '../assets/account.png'
 import house from '../assets/image.png';
-import MapAndReviewContainer from '../containers/MapAndReviewContainer'
+import Map from "./GoogleMap";
+import Cards from "./Cards";
 import { useAuth0 } from "@auth0/auth0-react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 
@@ -47,10 +48,17 @@ const Home = () => {
                 </div>
                 <img src={house} alt="" />
             </div>
-            <div>
-
+            <div className="secondPart">
+                <div className="map">
+                   <Map/>
+                </div>
+                <div className="cards">
+                    <Cards name="Hotel Transylvania" rating={5} review="Had a great assortment of candy, everyone was super friendly and looked real"/>
+                    <Cards name="Hotel Transylvania" rating={5} review="Had a great assortment of candy, everyone was super friendly and looked real"/>
+                    <Cards name="Hotel Transylvania" rating={5} review="Had a great assortment of candy, everyone was super friendly and looked real"/>
+                    <Cards name="Hotel Transylvania" rating={5} review="Had a great assortment of candy, everyone was super friendly and looked real"/>
+                </div>
             </div>
-            <MapAndReviewContainer/>
         </div>
     );
 }
