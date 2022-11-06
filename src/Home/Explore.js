@@ -4,8 +4,6 @@ import Cards from "./Cards";
 import Logo from '../assets/Logo.png'
 import acc_img from '../assets/account.png'
 import { useAuth0 } from "@auth0/auth0-react";
-import {MapContainer, TileLayer} from 'react-leaflet'
-import { NavLink as RouterNavLink } from "react-router-dom";
 import MapAndReviewContainer from "../containers/MapAndReviewContainer";
 
 
@@ -38,6 +36,9 @@ function Explore(){
                     <img className="account" onClick={() => logoutWithRedirect()} src={acc_img} alt="account" />
                 </div>
 
+            </div>
+            <div className="map1">
+                <MapAndReviewContainer/>
             </div>
             <div className="cards">
                     <Cards name="Hotel Transylvania" rating={5} review="Had a great assortment of candy, everyone was super friendly and looked real."/>
