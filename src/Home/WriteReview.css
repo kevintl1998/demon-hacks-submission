@@ -26,6 +26,22 @@ body {
     padding-right: 3px;
 }
 
+.rowFlexMid {
+    width: 33%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rowFlexMid a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 5%;
+}
+
 .account {
     height: 50px;
     width: 40px;
@@ -37,3 +53,7 @@ body {
     justify-content: space-between;
     background-color: rgba(126, 126, 126, 0.2);
 }
+
+/*.button:hover {*/
+/*    color*/
+/*}*/

@@ -11,8 +11,7 @@ function WriteReview() {
                     <img className="Logo" src={Logo} alt="Logo"/>
                     <h2 className="Title">GoodCandy</h2>
                 </div>
-
-                <div className="rowFlex">
+                <div className="rowFlexMid">
                     <a href="/about">About</a>
                     <a href="">Find Houses</a>
                 </div>
