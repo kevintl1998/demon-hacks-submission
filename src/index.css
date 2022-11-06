@@ -9,42 +9,6 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.mb-20 {
-    margin-bottom: 20px
-}
-
-.logo {
-    padding: 10px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
-.account-img {
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-}
-
-.Nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    vertical-align: middle;
-    align-items: center;
-}
-
-.Nav a {
-    height: 30px;
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    color: #DC5F00;
-    padding: 8px;
-}
-
-.Nav a:hover {
-    background-color: #000000;
-    border-radius: 20px;
+button {
+    font-family: 'Irish Grover';
 }
