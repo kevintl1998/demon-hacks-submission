@@ -29,7 +29,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 5%;
-    width: 90%;
+    width: 80%;
 }
 
 .midDiv img {
@@ -38,20 +38,20 @@ body {
 
 .midText {
     justify-content: left;
-    width: 25%;
+    width: 40%;
     display: block;
     color: white;
 }
 
 .midText h2 {
     text-align: left;
-    font-size: 20px;
+    font-size: 46px;
     font-weight: extra-bold;
 }
 
 .midText p {
     text-align: left;
-    font-size: 12px;
+    font-size: 26px;
 }
 
 .rowFlexLeft {
@@ -61,6 +61,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: left;
+}
+
+.rowFlexLeft a {
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .rowFlexRight {
@@ -94,7 +99,9 @@ body {
 }
 
 .Nav {
-    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 94%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
