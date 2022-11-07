@@ -5,6 +5,7 @@ import {MapContainer, TileLayer, useMapEvents} from "react-leaflet";
 
 
 class MapAndReviewContainer extends Component {
+    
     render() {
         return (
             <div className="mapAndReviewContainer">

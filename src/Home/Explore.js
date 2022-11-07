@@ -5,6 +5,7 @@ import Logo from '../assets/Logo.png'
 import acc_img from '../assets/account.png'
 import { useAuth0 } from "@auth0/auth0-react";
 import MapAndReviewContainer from "../containers/MapAndReviewContainer";
+import getGeoCode from "./latlng.Js";
 
 
 function Explore(){
@@ -41,6 +42,9 @@ function Explore(){
                 <MapAndReviewContainer/>
             </div>
             <div className="cards">
+
+                    
+
                     <Cards name="Hotel Transylvania" rating={5} review="Had a great assortment of candy, everyone was super friendly and looked real."/>
                     <Cards name="Hotel Transylvania" rating={4} review="Was scared every second I was there. This place is truly terrifying!!"/>
                     <Cards name="Hotel Transylvania" rating={5} review="Ghosts!!! 👻"/>
